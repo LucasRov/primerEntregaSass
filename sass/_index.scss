@@ -1,0 +1,27 @@
+
+
+
+/*---------------------------------------
+        ESTILOS - INDEX
+-----------------------------------------*/
+
+.containerIndex{
+    margin: 0;
+    padding: 0;
+    main{
+        .videosPresentacion > video{
+            width: 100%;
+            @media screen and (max-width:768px) {
+            margin-top: 90px;
+            }
+        }
+        .ayudamos{
+            position: relative;
+            color: rgb(255, 255, 255);
+            margin: 8% 0% 10% 0%;
+            text-align: center;
+            font-size: calc(0.9em + 1vw);
+        }
+    
+    }
+}

@@ -1,0 +1,120 @@
+
+
+//ESTILOS GENERALES.//
+
+
+/*--------------------------------------------------------
+ESTILOS GENERALES.
+--------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://drive.google.com/uc?export=download&id=1EucIo7kj_xKSurAQTXccPrPg1xq79f3U);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    header{
+        .navbar{
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            background: rgb(14,8,119);
+            background: $color-degrades;
+            display: flex;
+            justify-content: end;
+            .container-fluid{
+                a{
+                    .logo{
+                        margin-left: 30%;
+                        width: 150px;
+                    }
+                }
+                .navbar-collapse{
+                    @media screen and (min-width:992px){
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-right: 10%;
+                        }
+                    .navbar-nav{
+                        .nav-item{
+                            @media screen and (max-width:992px){
+                                display: flex;
+                                justify-content: center;
+                                margin: 1%;
+                                }
+                            @media screen and (min-width:992px){
+                                margin: 3%;
+                            }
+                            .nav-link{
+                                border-radius: 20px;
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                                background-color: rgba(0, 0, 195, 0.774);
+                                @media screen and (max-width:992px){
+                                    text-align: center;
+                                    width: 170px;
+                                    border-radius: 20px;
+                                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                                    background-color: rgba(0, 0, 195, 0.774);
+                                }
+                                @media screen and (max-width:768px){
+                                    width: 170px;
+                                }
+                                &:hover{
+                                    transform: scale(1.2);
+                                    background: rgb(14,8,119);
+                                    background: linear-gradient(347deg, rgba(14,8,119,1) 0%, rgba(0,3,110,1) 35%, rgba(0,46,147,1) 96%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        grid-area: main;
+        min-height: 100vh;
+        #titulo{
+            position: relative;
+            text-align: center;
+            margin-top: 10%;   
+            font-size: calc(3em + 1vw);
+            color: rgb(18, 41, 250);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: calc(0.9em + 1vw);
+            margin: 5% 5% 0 5% ;
+        }
+        h3{
+            color: white;
+            font-size: calc(2em + 1vw);
+            margin-top: 10%;
+            text-align: center;
+        }
+    }    
+    footer{
+        grid-area: footer;
+        padding: 10px;
+        align-items: center;
+        background: $color-degrades;
+        display: flex;
+        justify-content: center;
+        .derechos{
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0%;
+        }
+    } 
+}
+        
